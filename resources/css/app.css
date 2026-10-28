@@ -1,0 +1,156 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+
+/* ===== GLOWMART SAGE GREEN THEME ===== */
+
+:root {
+    --sage-50: #F5F5E9;
+    --sage-100: #E8EDD9;
+    --sage-200: #CBD5B2;
+    --olive: #82966A;
+    --olive-dark: #61745B;
+    --forest: #435641;
+    --text-color: #354335;
+    --border-color: #E0E7D4;
+}
+
+body {
+    color: var(--text-color);
+    background: linear-gradient(
+        135deg,
+        #F7F8F1,
+        #F5F5E9,
+        #EDF1E3
+    );
+}
+
+/* Sidebar */
+.sidebar {
+    background: linear-gradient(
+        180deg,
+        #F5F5E9,
+        #E8EDD9,
+        #CBD5B2
+    );
+    border-right: 1px solid var(--border-color);
+}
+
+/* Menu */
+.menu a,
+.menu-link {
+    color: var(--forest);
+    border-radius: 12px;
+    transition: 0.2s ease;
+}
+
+.menu a:hover,
+.menu-link:hover {
+    background: linear-gradient(
+        100deg,
+        #FFFFFF,
+        #E8EDD9
+    );
+    color: var(--forest);
+}
+
+/* Menu aktif */
+.menu a.active,
+.menu-link.active {
+    color: #FFFFFF;
+    background: linear-gradient(
+        110deg,
+        #A8BA8C,
+        #82966A,
+        #61745B
+    );
+}
+
+/* Kartu */
+.card,
+.panel,
+.content-card {
+    background: linear-gradient(
+        145deg,
+        #FFFFFF,
+        #F5F5E9
+    );
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    box-shadow: 0 5px 18px rgba(67, 86, 65, 0.08);
+}
+
+/* Judul */
+h1,
+h2,
+h3 {
+    color: var(--forest);
+}
+
+/* Tombol */
+.btn-primary {
+    color: #FFFFFF;
+    background: linear-gradient(
+        110deg,
+        #82966A,
+        #61745B
+    );
+    border: none;
+    border-radius: 10px;
+    transition: 0.2s ease;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(
+        110deg,
+        #61745B,
+        #435641
+    );
+}
+
+/* Tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    color: var(--forest);
+    background: linear-gradient(
+        90deg,
+        #E8EDD9,
+        #F5F5E9
+    );
+}
+
+th,
+td {
+    padding: 12px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+tbody tr:hover {
+    background: #F5F7EF;
+}
+
+/* Form */
+input,
+select,
+textarea {
+    border: 1px solid #D8E0CA;
+    border-radius: 9px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #CBD5B2;
+    border-color: #82966A;
+}
